@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "efb5e083-314a-49fa-adcf-2e3eb64fe917",
+		"name": "Cats vs Dogs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21704274"
+	},
+	"item": [
+		{
+			"name": "Cats",
+			"item": [
+				{
+					"name": "All Cat FACTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/catfacts/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"catfacts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful All CatFacts Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/catfacts/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"catfacts",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "413"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19d-bi3QXe9I2eT9VyXE3OCzsbcPP4c\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jan 2023 23:27:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"63c9ad020b63264ad788988f\",\n        \"description\": \"Cats make about 100 different sounds. Dogs make only about 10.\"\n    },\n    {\n        \"_id\": \"63c9ad020b63264ad7889891\",\n        \"description\": \"Domestic cats spend about 70 percent of the day sleeping and 15 percent of the day grooming.\"\n    },\n    {\n        \"_id\": \"63c9ad020b63264ad7889893\",\n        \"description\": \"Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Random CAT FACT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/catfacts/random",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"catfacts",
+								"random"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Random Successful Cat Fact",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/catfacts/random",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"catfacts",
+										"random"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"99-CpShi+QPlhPItI81N0K3P6ttg34\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jan 2023 23:28:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"63c9ad020b63264ad7889893\",\n    \"description\": \"Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dogs",
+			"item": [
+				{
+					"name": "All Dog Facts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/dogfacts",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"dogfacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random Dog Fact",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/dogfacts/random",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"dogfacts",
+								"random"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/list",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/getOneUser/:user_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"getOneUser",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "63cba7ca188703b33ba831df"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Logged User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvYmxpbjcyOUBnbWFpbC5jb20iLCJpYXQiOjE2NzQ1MTYzNjYsImV4cCI6MTY3NDY4OTE2Niwic3ViIjoiNjNjYmE3Y2ExODg3MDNiMzNiYTgzMWRmIn0.N0iS9iW5RX-K-ZO-NUN-nKvynP5_tAfHcV6__Th-QV",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/getLoggedUser",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"getLoggedUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBvcGlub0BnbWFpbC5jb20iLCJpYXQiOjE2NjQ3MzM3ODcsImV4cCI6MTY2NDkwNjU4Nywic3ViIjoiNjMzNjE0YmRlNDVhM2U3YmRjM2JlYzliIn0.mxMYHq63gfdeNKODOiw0aihgA0oihjd8ejeZ7iMKh04",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "goblin666",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "goblin666@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "points",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/editUser/:user_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"editUser",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "63cba7ca188703b33ba831df"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete One User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/deleteUser/:user_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"deleteUser",
+								":user_id"
+							],
+							"variable": [
+								{
+									"key": "user_id",
+									"value": "63ce58cd63babb32ed5678e5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Danoninooo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "danoninooo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "points",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/create",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "goblin729@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload",
+			"item": [
+				{
+					"name": "Upload Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageUrl",
+									"type": "file",
+									"src": "/C:/Users/spani/Downloads/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/upload",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:5005/api"
+		}
+	]
+}
