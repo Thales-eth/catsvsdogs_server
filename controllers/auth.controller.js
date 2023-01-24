@@ -4,7 +4,7 @@ const User = require('../models/User.model')
 
 const signup = (req, res, next) => {
 
-    const { username, email, password, points } = req.body
+    const { username, email, password } = req.body
 
     if (!email.trim() || !password) {
         res.status(400).json({ err: "Bruh, just input some stuff pls" })
@@ -22,7 +22,7 @@ const signup = (req, res, next) => {
         .genSalt(+process.env.SALT)
         .then(salt => {
             const hashedPwd = bcrypt.hashSync(password, salt)
-            return User.create({ username, email, password: hashedPwd, points })
+            return User.create({ username, email, password: hashedPwd })
         })
         .then(() => {
             res.status(201).json({ message: 'New User created!' })
